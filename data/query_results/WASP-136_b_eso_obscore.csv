@@ -1,0 +1,4 @@
+obs_publisher_did,instrument_name,dataproduct_type,access_url,access_format,s_ra,s_dec,em_min,em_max,t_exptime
+ivo://eso.org/ID?ADP.2020-06-09T10:47:53.619,UVES,spectrum,http://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2020-06-09T10:47:53.619,application/x-votable+xml;content=datalink,0.324346,-8.92653,4.7264299999999995e-07,6.83504e-07,1056.998
+ivo://eso.org/ID?ADP.2020-06-10T14:26:50.822,UVES,spectrum,http://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2020-06-10T14:26:50.822,application/x-votable+xml;content=datalink,0.324722,-8.92607,4.7264299999999995e-07,6.83507e-07,1056.999
+ivo://eso.org/ID?ADP.2020-06-10T14:26:50.910,UVES,spectrum,http://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2020-06-10T14:26:50.910,application/x-votable+xml;content=datalink,0.325113,-8.92623,4.7264299999999995e-07,6.83507e-07,1057.002
