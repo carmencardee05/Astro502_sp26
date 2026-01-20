@@ -1,0 +1,32 @@
+{
+  "input":
+  {
+    "instrument":"HIRES",
+    "koaid":"HI.19950208.25741.fits",
+    "filehand":"/koadata4/HIRES/19950208/lev0/HI.19950208.25741.fits"
+  },
+  "result":
+  {
+    "nlev1file":"4",
+    "lev1subdir_prefix":"/koadata4/HIRES/19950208/lev1",
+    "data":
+    [
+      {
+        "subdir":"lists",
+        "lev1files":
+        [
+            "HI.19950208.25741.flatlamp.list.gz",
+            "HI.19950208.25741.caliblist.gz",
+            "HI.19950208.25741.bias.list.gz"
+        ]
+      },
+      {
+        "subdir":"qa",
+        "lev1files":
+        [
+            "HI.19950208.25741_0_qa.txt"
+        ]
+      }
+    ]
+  }
+}

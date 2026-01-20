@@ -1,0 +1,12 @@
+{
+  "input":
+  {
+    "instrument":"HIRES",
+    "koaid":"HI.19950125.03696.fits",
+    "filehand":"/koadata4/HIRES/19950125/lev0/HI.19950125.03696.fits"
+  },
+  "result":
+  {
+    "nlev1file":"0"
+  }
+}
