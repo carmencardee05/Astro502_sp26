@@ -1,0 +1,3 @@
+,Date,BJD,Observatory,Filter,target,pp,Measurement file name,full_file_name,texp,Duration,Efficiency,cbvs,ncols
+35974,2020-09-17,2459109,LCO-SAAO-1m0,zs,TIC251848941,2,15px_measurements.tbl,TIC251848941-02_20200917_LCO-SAAO-1m0_zs_15px_measurements.tbl,20.70719003677368,8.82583199813962,97.7,5,237
+36165,2020-09-28,2459120,LCO-SSO-1m0,gp,TIC251848941,1,alt_measurements.tbl,TIC251848941-01_20200928_LCO-SSO-1m0_gp_alt_measurements.tbl,21.283194422721863,4.449480000883341,98.6,5,151

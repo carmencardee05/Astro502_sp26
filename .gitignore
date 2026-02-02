@@ -1,14 +1,13 @@
+# Ignore everything in data by default
+data/*
 
-data/
-downloads/
-exofop_outputs/
-*.fits
-*.fits.gz
-*.fit
-*.zip
-*.pdf
-*.ps
-*.png
-*.jpg
-*.tbl
-*.dat
+# Allow the exofop_spectra directory
+!data/exofop_spectra/
+!data/exofop_spectra/**/
+
+# Ignore everything else inside exofop_spectra
+data/exofop_spectra/**
+
+# But allow ONLY .fits files inside exofop_spectra
+!data/exofop_spectra/**/*.fits
+

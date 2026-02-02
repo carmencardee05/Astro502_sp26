@@ -1,0 +1,3 @@
+,Date,BJD,Observatory,Filter,target,pp,Measurement file name,full_file_name,texp,Duration,Efficiency,cbvs,ncols
+687,2018-09-10,2458371,El-Sauce,Rc,TIC403136413,1,Measurements.txt,TIC403136413-01_20180910_El_Sauce_Rc_Measurements.txt,16.675199568271637,4.57353600114584,97.9,3,286
+775,2018-09-10,2458371,LCO-BRIEF,w,TIC403136413,1,measurements.xls,TIC403136413-01_20180910_LCO_BRIEF_w_measurements.xls,7.343995571136475,4.217519994825125,95.1,5,526

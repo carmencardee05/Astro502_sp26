@@ -1,0 +1,5 @@
+Date,BJD,Observatory,Filter,target,pp,Measurement file name,full_file_name,texp,Duration,Efficiency,cbvs,ncols
+2020-06-20,2459020,OPM,Ic,TIC468574941,1,measurements.tbl,TIC468574941-01_20200620_OPM_Ic_measurements.tbl,54.00000214576721,4.4631839990615845,99.2,5,1034
+2020-07-28,2459058,LCO-McD-0m4,gp,TIC468574941,1,measurements.tbl,TIC468574941-01_20200728_LCO-McD-0m4_gp_measurements.tbl,0.0,0.0,,5,721
+2020-07-28,2459058,LCO-McD-0m4,ip,TIC468574941,1,measurements.tbl,TIC468574941-01_20200728_LCO-McD-0m4_ip_measurements.tbl,0.0,0.0,,5,742
+1001-01-01,0,unknown,xx,unknown,-1,unknown.unknown,TIC468574941_20211009_Herges_measurements.csv,28.800004720687866,4.391999993473291,63.4,5,117
