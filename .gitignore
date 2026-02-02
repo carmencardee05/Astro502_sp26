@@ -1,0 +1,14 @@
+
+data/
+downloads/
+exofop_outputs/
+*.fits
+*.fits.gz
+*.fit
+*.zip
+*.pdf
+*.ps
+*.png
+*.jpg
+*.tbl
+*.dat
