@@ -1,0 +1,1 @@
+import pandas as pddf = pd.read_csv("ASTR502_Master_Target_List.csv")df.columns = df.columns.str.strip()names = df["hostname"].dropna().astype(str).tolist()for n in names:    print(n)
