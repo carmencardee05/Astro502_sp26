@@ -1,0 +1,2 @@
+Filename,Target,RA,Dec,instrument,SNR_General,SNR-Li,SNR_Ha,SNR_Ca,wavelength-low,wavelength-high
+data/organized_spectra/TIC318707987/220383386S-hi54790.91931i.fits,TIC318707987,,,HIRES: High Resolution Echelle Spectrometer,5266253.4042006275,,,,7852.290070879473,7989.724795835275
