@@ -3,17 +3,30 @@ import numpy as np
 import matplotlib.pyplot as plt
 import glob
 
-# ==========================================
-# SETTINGS
-# ==========================================
+
 folder = "data/koa/HIRES/KELT-1/lev1/extracted/HI.20170702.51878"
-region_min = 6695
-region_max = 6725
+region_min = 6650
+region_max = 6750
 target_wave = 6708.0
 
-# ==========================================
-# HELPER: find wavelength and flux columns
-# ==========================================
+v_rad = 65.0
+c = 299792.458
+z = v_rad / c
+
+def get_observed_wavelength(v_rad, target_wave):
+    
+    c = 299792.458
+    z = v_rad / c
+    lambda_obs = target_wave * (1 + z)
+    
+    return lambda_obs
+    
+    wavelength_rest = lambda_obs / (1 + z)
+    
+    return wavelength_rest
+
+
+
 def get_wave_flux_from_table(table, colnames):
     upper_names = [name.upper() for name in colnames]
 
@@ -42,18 +55,14 @@ def get_wave_flux_from_table(table, colnames):
 
     return np.array(wave), np.array(flux)
 
-# ==========================================
-# GET FILES
-# ==========================================
+
 files = sorted(glob.glob(f"{folder}/*.fits.gz"))
 
 print(f"Found {len(files)} files")
 
 found_any = False
 
-# ==========================================
-# LOOP THROUGH FILES
-# ==========================================
+
 for file in files:
     print(f"\nTrying: {file}")
 
@@ -74,10 +83,15 @@ for file in files:
                 print("     ", name)
 
             wave, flux = get_wave_flux_from_table(table, colnames)
+            
+          
 
             # Flatten in case columns are weird shapes
             wave = np.ravel(wave)
             flux = np.ravel(flux)
+            
+            # Apply doppler correction
+            wave = wave / (1 + z)
 
             # Clean
             mask = np.isfinite(wave) & np.isfinite(flux)
@@ -89,6 +103,9 @@ for file in files:
                 continue
 
             print(f"  -> Wavelength range: {np.min(wave):.2f} to {np.max(wave):.2f} Å")
+            
+            wave_rest = wave / (1 + z)
+            
 
             # Check if lithium region is present
             if not ((np.min(wave) < target_wave) and (np.max(wave) > target_wave)):
